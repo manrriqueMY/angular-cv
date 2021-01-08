@@ -1,0 +1,59 @@
+{
+    "language":[
+        {"name": "Java", "percent": "85" },
+        {"name": "PHP", "percent": "90" },
+        {"name": "Python", "percent": "65" },
+        {"name": "C#", "percent": "75" },
+        {"name": "Javascript", "percent": "95" },
+        {"name": "Typescript", "percent": "65" },
+        {"name": "Dart", "percent": "55" }
+    ],
+    "framework":[
+        {"name": "Spring", "percent": "75" },
+        {"name": "Hibernate", "percent": "85" },
+        {"name": "Laravel", "percent": "95" },
+        {"name": "Slim", "percent": "55" },
+        {"name": ".NET", "percent": "55" },
+        {"name": "Entity Framework", "percent": "65" },
+        {"name": "DJango", "percent": "45" },
+        {"name": "Flask", "percent": "65" },
+        {"name": "Express", "percent": "85" }
+    ],
+    "libreria":[
+        {"name": "React JS", "percent": "85" },
+        {"name": "JQuery", "percent": "85" },
+        {"name": "Angular", "percent": "75" },
+        {"name": "Vue JS", "percent": "55" },
+        {"name": "Sass", "percent": "45" },
+        {"name": "less", "percent": "40" },
+        {"name": "Css 3", "percent": "85" },
+        {"name": "Html 5", "percent": "85" },
+        {"name": "Bootstrap", "percent": "95" },
+        {"name": "Material", "percent": "75" }
+    ],
+    "servidor":[
+        {"name": "Ubuntu", "percent": "75" },
+        {"name": "Centos", "percent": "65" },
+        {"name": "VPS", "percent": "75" },
+        {"name": "AWS", "percent": "45" },
+        {"name": "Azure", "percent": "45" },
+        {"name": "Windows Server", "percent": "45" },
+        {"name": "Docker", "percent": "35" },
+        {"name": "MySQL", "percent": "85" },
+        {"name": "PostgreSQL", "percent": "75" },
+        {"name": "Oracle", "percent": "75" },
+        {"name": "MongoDB", "percent": "55" },
+        {"name": "Firebase", "percent": "50" },
+        {"name": "SQL Server", "percent": "60" }
+    ],
+    "otro":[
+        {"name": "Pusher JS", "percent": "45" },
+        {"name": "Socket IO", "percent": "75" },
+        {"name": "Opentok", "percent": "75" },
+        {"name": "WebRTC", "percent": "25" },
+        {"name": "React Native", "percent": "75" },
+        {"name": "Flutter", "percent": "85" },
+        {"name": "Croopper", "percent": "65" },
+        {"name": "Datatable JS", "percent": "85" }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "classe":[
+        {"class":"java", "name":"Java" },
+        {"class":"csharp", "name":"C#" },
+        {"class":"python", "name":"Python" },
+        {"class":"javascript", "name":"JavaScript" },
+        {"class":"php", "name":"PHP" },
+        {"class":"dart", "name":"Dart" }
+    ],
+    "portafolio":[
+        {"name": "Windows", "image": "/assets/portafolio/windows.png", "clases":["java","csharp","python","javascript","php","dart"]},
+        {"name": "Mysql", "image": "/assets/portafolio/mysql.png", "clases":["java","csharp","python","javascript","php"]},
+        {"name": "Sublime Text", "image": "/assets/portafolio/sublimetext.png", "clases":["javascript","php"]},
+        {"name": "VS Code", "image": "/assets/portafolio/vscode.png", "clases":["javascript","php","dart"]},
+        {"name": "Xampp", "image": "/assets/portafolio/xampp.jpg", "clases":["php"]},
+        {"name": "PostgreSQL", "image": "/assets/portafolio/postgresql.png", "clases":["php"]},
+        {"name": "Firefox", "image": "/assets/portafolio/firefox.jpg", "clases":["java","csharp","python","javascript","php"]},
+        {"name": "Postman", "image": "/assets/portafolio/postman.jpg", "clases":["java","csharp","python","javascript","php","dart"]},
+        {"name": "NetBeans", "image": "/assets/portafolio/netbeans.png", "clases":["java"]},
+        {"name": "Oracle", "image": "/assets/portafolio/oracle.png", "clases":["java"]},
+        {"name": "MongoDB", "image": "/assets/portafolio/mongodb.png", "clases":["java","javascript","php"]},
+        {"name": "Visual Studio", "image": "/assets/portafolio/visualstudio.jpg", "clases":["csharp"]},
+        {"name": "SQL Server", "image": "/assets/portafolio/sqlserver.png", "clases":["csharp"]},
+        {"name": "Python IDLE", "image": "/assets/portafolio/pythonidle.jpg", "clases":["python"]},
+        {"name": "Git", "image": "/assets/portafolio/git.png", "clases":["java","csharp","python","javascript","php","dart"]},
+        {"name": "Heroku", "image": "/assets/portafolio/heroku.png", "clases":["python","javascript"]},
+        {"name": "Telefono", "image": "/assets/portafolio/telefono.jpg", "clases":["java","csharp","python","javascript","php","dart"]},
+        {"name": "Docker", "image": "/assets/portafolio/docker.png", "clases":["java", "python","javascript","php"]}
+    ]
+}

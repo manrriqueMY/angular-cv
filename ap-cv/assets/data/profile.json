@@ -1,0 +1,20 @@
+{
+    "name": "Manrrique",
+    "lastname":"MENESES YARANGA",
+    "social":{
+        "facebook":"https://www.facebook.com/manrrique.my",
+        "twitter":"https://twitter.com/meyaman_123",
+        "stackoverflow": "https://es.stackoverflow.com/users/77342/manrrique-meneses-yaranga",
+        "linkedin":"https://www.linkedin.com/in/manrrique-my/",
+        "github": "https://github.com/manrriqueMY"
+    },
+    "contact":{
+        "born": "Septiembre 25, 1994",
+        "location":"Lima, Peru",
+        "email":"manrrique.my@mail.com",
+        "phone":"+51910103845",
+        "skype": "meyaman_123",
+        "whatsapp": "+51910103845",
+        "telegram": "manrriquemy"
+    }
+}
