@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
+  blogs = [];
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
+  gblogs = async () => {
+    var {blog} = await fetch("/assets/data/blog.json").then(res => res.json());
+    this.blogs = blog;
+  }
 }
