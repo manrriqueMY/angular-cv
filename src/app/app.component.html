@@ -1,0 +1,39 @@
+<main class="main">
+  <div class="container gutter-top">
+    <div class="row sticky-parent">
+      <!-- Sidebar -->
+      <aside class="col-12 col-md-12 col-xl-3">
+        <app-aside-card [loadStyle] = "loadStyle"></app-aside-card>
+      </aside>    
+
+      <!-- Content -->
+      <div class="col-12 col-md-12 col-xl-9">
+        <div class="box shadow pb-0">
+          <!-- Menu -->
+          <div class="circle-menu">
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="inner-menu js-menu">
+            <ul class="nav">
+              <li class="nav__item"><a routerLinkActive="active" routerLink="/about">Sobre mi</a></li>
+              <li class="nav__item"><a routerLinkActive="active" routerLink="/resume">Resumen</a></li>
+              <li class="nav__item"><a routerLinkActive="active" routerLink="/portfolio">Herramientas</a></li>
+              <li class="nav__item"><a routerLinkActive="active" routerLink="/blog">Blog</a></li>
+              <!--<li class="nav__item"><a routerLinkActive="active" routerLink="/contact">Contacto</a></li>-->
+            </ul>
+          </div>
+
+          <router-outlet></router-outlet>
+          <!-- About -->
+
+        </div>
+        <!-- Footer -->
+        <footer class="footer">© 2019 vCard</footer>
+      </div>
+    </div>
+  </div>
+</main>

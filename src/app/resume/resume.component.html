@@ -1,0 +1,110 @@
+<!-- About -->
+<div class="pb-3">
+    <h1 class="title title--h1 first-title title__separate">Resumen</h1>
+</div>
+
+<!-- Experience -->
+<div class="pb-0">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h2 class="title title--h3"><img class="title-icon" src="assets/icons/icon-education.svg" alt="" /> Education</h2>
+            <div class="timeline">
+                <!-- Item -->
+                <article class="timeline__item">
+                    <h5 class="title title--h5 timeline__title">Universidad Nacional San Cristobal de Huamanga</h5>
+                    <span class="timeline__period">2012 — 2018</span>
+                    <p class="timeline__description">Bachiller en Ingenieria de Sistemas.</p>
+                </article>
+            </div>	
+        </div>
+        
+        <div class="col-12 col-lg-6">
+            <h2 class="title title--h3"><img class="title-icon" src="assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+            <div class="timeline">
+                <!-- Item -->
+                <article class="timeline__item">
+                    <h5 class="title title--h5 timeline__title">Full - Stack</h5>
+                    <span class="timeline__period">2014 — Presente</span>
+                    <p class="timeline__description">Java, C#, PHP, JavaScript, Python.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills -->
+<div class="box-inner box-inner--rounded">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h2 class="title title--h3">Lenguajes de Programación</h2>
+            <div class="box box__second">   
+
+                <div class="progress" *ngFor="let language of languages">
+                    <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{language['percent'] || '0'}}" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-text"><span>{{language['name'] || ''}}</span><span>{{language['percent'] || ''}}%</span></div>
+                    </div>
+                    <div class="progress-text"><span>{{language['name'] || ''}}</span></div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <h2 class="title title--h3">Frameworks</h2>
+            <div class="box box__second">               
+                
+                <div class="progress" *ngFor="let framework of frameworks">
+                    <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{framework['percent']}}" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-text"><span>{{framework['name']}}</span><span>{{framework['percent']}}%</span></div>
+                    </div>
+                    <div class="progress-text"><span>{{framework['name']}}</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <h2 class="title title--h3">Front - End</h2>
+            <div class="box box__second">               
+                
+                <div class="progress" *ngFor="let libreria of librerias">
+                    <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{libreria['percent']}}" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-text"><span>{{libreria['name']}}</span><span>{{libreria['percent']}}%</span></div>
+                    </div>
+                    <div class="progress-text"><span>{{libreria['name']}}</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <h2 class="title title--h3">Servicios</h2>
+            <div class="box box__second">               
+                
+                <div class="progress" *ngFor="let servidor of servidors">
+                    <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{servidor['percent']}}" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-text"><span>{{servidor['name']}}</span><span>{{servidor['percent']}}%</span></div>
+                    </div>
+                    <div class="progress-text"><span>{{servidor['name']}}</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <h2 class="title title--h3">Mas Tecnologías</h2>
+            <div class="box box__second">               
+                
+                <div class="progress" *ngFor="let otro of otros">
+                    <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{otro['percent']}}" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-text"><span>{{otro['name']}}</span><span>{{otro['percent']}}%</span></div>
+                    </div>
+                    <div class="progress-text"><span>{{otro['name']}}</span></div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="pb-2">
+    <h1 class="title title--h1 first-title title__separate">Herramientas</h1>
+</div>
+
+<!-- Gallery -->
+<div class="pb-0">
+    <!-- Filter -->
+    <div class="select">
+        <span class="placeholder">Select category</span>
+        <ul class="filter">
+            <li class="filter__item">Category</li>
+            <li class="filter__item active" data-filter="*"><a class="filter__link active">Todos</a></li>
+            <li *ngFor="let classe of classes" class="filter__item" attr.data-filter=".{{classe['class'] || ''}}"><a class="filter__link">{{classe['name'] || ""}}</a></li>
+        </ul>
+        <input type="hidden" name="changemetoo"/>
+    </div>
+
+    <!-- Content -->
+    <div class="gallery-grid js-masonry js-filter-container">
+        <div class="gutter-sizer"></div>
+
+        <figure *ngFor="let portafolio of portafolios" class="gallery-grid__item {{portafolio['clases'].join(' ') || ''}}">
+            <div class="gallery-grid__image-wrap">
+                <img class="gallery-grid__image cover lazyload" src="{{portafolio['image'] || ''}}" data-zoom alt="" />
+            </div>
+            <figcaption class="gallery-grid__caption">
+                <h4 class="title gallery-grid__title">{{portafolio['name'] || ''}}</h4>
+                <span class="gallery-grid__category">{{portafolio['clases'] || ''}}</span>
+            </figcaption>
+        </figure>
+
+    </div>
+</div>

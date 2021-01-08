@@ -1,0 +1,69 @@
+<div class="sidebar box shadow pb-0 sticky-column">
+    <svg class="avatar avatar--180 rounded-circle" viewBox="0 0 188 188">
+        <g class="avatar__box">
+            <image xlink:href="assets/img/perfil-square.jpg" height="100%" width="100%" />
+        </g>
+    </svg>
+    <div class="text-center">
+        <h3 class="title title--h3 sidebar__user-name">
+            <span class="weight--500">{{profile['name'] || ""}}</span> {{profile['lastname'] || ""}}
+        </h3>
+        <div class="badge badge--gray">Analista Programador</div>
+
+        <!-- Social -->
+        <div class="social">
+            <a class="social__link" target="_blank" href="{{profile['social']['facebook'] || ''}}"><i
+                    class="font-icon icon-facebook"></i></a>
+            <a class="social__link" target="_blank" href="{{profile['social']['twitter'] || ''}}"><i
+                    class="font-icon icon-twitter"></i></a>
+            <a class="social__link" target="_blank" href="{{profile['social']['stackoverflow'] || ''}}"><i
+                    class="fab fa-stack-overflow"></i></a>
+            <a class="social__link" target="_blank" href="{{profile['social']['linkedin'] || ''}}"><i
+                    class="font-icon icon-linkedin2"></i></a>
+            <a class="social__link" target="_blank" href="{{profile['social']['github'] || ''}}"><i
+                    class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="sidebar__info box-inner box-inner--rounded">
+        <ul class="contacts-block">
+            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Cumpleaño">
+                <i class="font-icon icon-calendar"></i>{{profile["contact"]["born"] || ""}}
+            </li>
+            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Dirección">
+                <i class="font-icon icon-location"></i>{{profile["contact"]["location"] || ''}}
+            </li>
+            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
+                <a href="mailto:{{profile['contact']['email'] || ''}}"><i class="font-icon icon-envelope"></i>{{profile['contact']['email'] || ''}}</a>
+            </li>
+            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Teléfono">
+                <a href="tel:{{profile['contact']['phone'] || ''}}"><i class="font-icon icon-phone"></i>{{profile['contact']['phone'] || ''}}</a>
+            </li>
+            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Skype">
+                <a href="skype:{{profile['contact']['skype'] || ''}}"><i class="font-icon icon-skype"></i>live:{{profile['contact']['skype'] || ''}}
+                </a>
+            </li>
+            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Whatsapp">
+                <a href="https://api.whatsapp.com/send?phone={{profile['contact']['whatsapp'] || ''}}" target="_blank"><i
+                        class="fab fa-whatsapp"></i> {{profile['contact']['whatsapp'] || ''}}</a>
+            </li>
+            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Telegram">
+                <a href="https://t.me/{{profile['contact']['telegram'] || ''}}" target="_blank"><i class="fab fa-telegram"></i> @{{profile['contact']['telegram'] || ''}}</a>
+            </li>
+            <li class="d-flex justify-content-center">
+                <a href="#" onclick="doGTranslate('es|en');return false;" title="English" class="gflag nturl"
+                    style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="32"
+                        width="32" alt="English" /></a><a href="#" onclick="doGTranslate('es|es');return false;"
+                    title="Spanish" class="gflag nturl" style="background-position:-600px -200px;"><img
+                        src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="Spanish" /></a>
+
+            </li>
+            <li class="d-flex justify-content-center">
+                <a (click)="stheme('light-theme')" class="light btn-light text-black"><i class="fas fa-sun"></i></a>
+                <a (click)="stheme('dark-theme')" class="dark btn-dark text-white"><i class="fas fa-moon"></i></a>
+            </li>
+        </ul>
+
+        <a class="btn" href="assets/docs/cv.pdf" target="_blank"><i class="font-icon icon-download"></i> Download CV</a>
+    </div>
+</div>
