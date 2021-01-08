@@ -1,10 +1,9 @@
 {
   "name": "ap-cv",
   "version": "0.0.0",
-  "homepage":"https://manrriqueMY.github.io/angular-cv",
   "scripts": {
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
+    "deploy":"gh-pages -d dist/ap-cv",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
